@@ -1,0 +1,81 @@
+#####################################
+# ASP.NET Core / Razor Pages
+#####################################
+
+# Build results
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Publish output
+publish/
+wwwroot/dist/
+
+#####################################
+# .NET Secrets
+#####################################
+
+appsettings.Development.json
+appsettings.*.json
+
+# User secrets
+secrets.json
+
+#####################################
+# Terraform
+#####################################
+
+# Terraform state files (VERY IMPORTANT 🚨)
+*.tfstate
+*.tfstate.*
+
+# Terraform cache
+.terraform/
+
+# Terraform lock file (optional: include if team wants consistency)
+# .terraform.lock.hcl
+
+# Crash logs
+crash.log
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+#####################################
+# Azure / Cloud
+#####################################
+
+# Azure credentials (if any local files)
+.azure/
+
+#####################################
+# Misc
+#####################################
+
+*.zip
+*.tar
+*.gz

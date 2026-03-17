@@ -1,0 +1,111 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Mobile App UI";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile UI</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f2f4f7;
+        }
+
+        .header {
+            background: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .card i {
+                font-size: 22px;
+                color: #4CAF50;
+            }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background: white;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+
+        .nav-item {
+            text-align: center;
+            color: gray;
+        }
+
+        .active {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">My Mobile App</div>
+
+    <div class="card">
+        <i class="fas fa-user"></i>
+        <div>
+            <h3>Profile</h3>
+            <p>View profile</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-bell"></i>
+        <div>
+            <h3>Notifications</h3>
+            <p>Check alerts</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-cog"></i>
+        <div>
+            <h3>Settings</h3>
+            <p>App settings</p>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <div class="nav-item active">
+            <i class="fas fa-home"></i>
+            Home
+        </div>
+        <div class="nav-item">
+            <i class="fas fa-search"></i>
+            Search
+        </div>
+        <div class="nav-item">
+            <i class="fas fa-user"></i>
+            Profile
+        </div>
+    </div>
+
+</body>
+</html>
